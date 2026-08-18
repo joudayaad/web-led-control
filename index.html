@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LED Control</title>
+</head>
+<body>
+
+    <h1>LED Control</h1>
+
+    <button onclick="turnOn()">LED ON</button>
+    <button onclick="turnOff()">LED OFF</button>
+
+    <p id="status">LED Status: OFF</p>
+
+    <script>
+        function turnOn() {
+            document.getElementById("status").innerText = "LED Status: ON";
+        }
+
+        function turnOff() {
+            document.getElementById("status").innerText = "LED Status: OFF";
+        }
+    </script>
+
+</body>
+</html>
